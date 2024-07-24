@@ -1,0 +1,81 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+
+}
+.card-body{
+  line-height:1;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+.nav-link {
+  font-size: 2rem; /* Adjust as needed */
+}
+.headerpfprop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 0, 0, 0.5);  z-index: -1; 
+}
+.headerpfprop{
+  position: relative;
+}
+.headerpfprop::after{
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+.childservice{
+  background-image: url("../images/Portada.webp");
+  width: 100vw;
+  height: 100vh;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-position: 10% 0%;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.childservice::after{
+  background-color: rgba(0, 0, 0, 0.09);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.parentservices{
+  overflow-x: hidden;
+  height: 110vh;
+  color: white;
+}
+
+.headerservice{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  margin: auto;
+}
+
+.typed-cursor {
+  font-size: inherit;
+  color: white;
+} 
